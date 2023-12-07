@@ -1,47 +1,47 @@
 **** "A custom implementation of the Unix command line tool wc, written in Python"****
  
-Features:
+# Features:
 **Counting Bytes (-c option):**
 Description: Counts the number of bytes in the specified text file.
 Usage:
 bash
 ccwc -c text.txt
-# Output:  341836 test.txt
+Output:  341836 test.txt
 
 **Counting Lines (-l option):**
 Description: Counts the number of lines in the specified text file.
 Usage:
 bash
 ccwc -l text.txt
-# Output:  7137 test.txt
+Output:  7137 test.txt
 
 **Counting Words (-w option):**
 Description: Counts the number of words in the specified text file.
 Usage:
 bash
 ccwc -w text.txt
-# Output:  58159 test.txt
+Output:  58159 test.txt
 
 **Counting Characters (-m option):**
 Description: Counts the number of characters in the specified text file. If the current locale does not support multibyte characters, this will match the -c option.
 Usage:
 bash
 ccwc -m text.txt
-# Output:  339120 test.txt
+Output:  339120 test.txt
 
 **Default Options (Equivalent to -c, -l, -w):**
 Description: When no options are provided, the command is equivalent to using -c, -l, and -w together.
 Usage:
 bash
 ccwc text.txt
-# Output:  7137   58159  341836 test.txt
+Output:  7137   58159  341836 test.txt
 
 **Reading from Standard Input:**
 Description: Supports reading from standard input if no filename is specified. This allows using the command in a pipeline.
 Usage:
 bash
 cat text.txt | ccwc -l
-# Output:  7137
+Output:  7137
 
 How it Works:
 **Command Line Arguments:**
