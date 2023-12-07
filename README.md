@@ -43,7 +43,7 @@ bash
 cat text.txt | ccwc -l
 Output:  7137
 
-How it Works:
+# How it Works:
 **Command Line Arguments:**
 The command-line arguments are processed to determine which counting options to apply.
 
