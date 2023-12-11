@@ -1,5 +1,27 @@
 **** "A custom implementation of the Unix command line tool wc, written in Python"****
- 
+
+**Usage**
+bash
+python file_counter.py <filename> [-c] [-l] [-w]
+<filename>: The path to the file you want to analyze.
+-c or --bytes: Count the number of bytes in the file.
+-l or --lines: Count the number of lines in the file.
+-w or --words: Count the number of words in the file.
+
+**Functions**
+count_bytes(input_string)
+Counts the number of bytes in a given string.
+
+count_lines(file_path)
+Counts the number of lines in a file, handling different line endings.
+
+count_words(file_path)
+Counts the number of words in a file.
+
+ccwc(filename, count_type='all')
+Combines the functionalities to count bytes, lines, and words based on the specified count_type.
+Prints the results for the selected count type.
+
 # Features:
 **Counting Bytes (-c option):**
 Description: Counts the number of bytes in the specified text file.
@@ -28,25 +50,9 @@ Usage:
 bash
 ccwc text.txt
 Output:  7137   58159  341836 test.txt
+ogic to deal with cases such as invalid file paths or incorrect command-line options.
 
-# How it Works:
-**Command Line Arguments:**
-The command-line arguments are processed to determine which counting options to apply.
 
-**File Handling:**
-The program reads the specified text file or standard input if no filename is provided.
-
-**Counting Logic:**
-Depending on the specified options (-c, -l, -w), the program counts the corresponding metrics (bytes, lines, words, characters).
-
-**Output:**
-The program outputs the count information in the specified format.
-
-**Locale Consideration:**
-For the -m option, the behavior might depend on the locale settings, and the output is adjusted accordingly.
-
-**Error Handling:**
-The program may include error-handling logic to deal with cases such as invalid file paths or incorrect command-line options.
 
 **Code Structure:**
 The code is organized into functions or methods to handle different aspects of the counting process, making it modular and easy to maintain.
