@@ -1,7 +1,4 @@
 **** "A custom implementation of the Unix command line tool wc, written in Python"****
-
- wrtie unit test cases
- readme improve
  
 # Features:
 **Counting Bytes (-c option):**
