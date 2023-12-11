@@ -8,7 +8,7 @@ python file_counter.py <filename> [-c] [-l] [-w]
 -l or --lines: Count the number of lines in the file.
 -w or --words: Count the number of words in the file.
 
-**Functions**
+****Functions****
 count_bytes(input_string)
 Counts the number of bytes in a given string.
 
